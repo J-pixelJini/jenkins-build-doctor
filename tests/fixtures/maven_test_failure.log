@@ -1,0 +1,22 @@
+[INFO] Scanning for projects...
+[INFO] Building payments-service 1.4.2
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] --- maven-compiler-plugin:3.11.0:compile (default-compile) ---
+[INFO] Compiling 42 source files to /workspace/target/classes
+[INFO] --- maven-surefire-plugin:3.1.2:test (default-test) ---
+[INFO] Running com.acme.payments.RefundServiceTest
+[ERROR] Tests run: 12, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 3.211 s <<< FAILURE! -- in com.acme.payments.RefundServiceTest
+[ERROR] com.acme.payments.RefundServiceTest.shouldRejectRefundAboveOriginalAmount() FAILED
+  expected: <false> but was: <true>
+[ERROR] com.acme.payments.RefundServiceTest.shouldEmitRefundIssuedEvent() FAILED
+  org.mockito.exceptions.verification.WantedButNotInvoked
+[INFO]
+[INFO] Results:
+[INFO]
+[ERROR] Tests run: 12, Failures: 2, Errors: 0, Skipped: 0
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 14.902 s
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.1.2:test (default-test) on project payments-service: There are test failures.
