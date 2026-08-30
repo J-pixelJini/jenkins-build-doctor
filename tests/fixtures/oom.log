@@ -1,0 +1,7 @@
+[INFO] Running test suite (forked JVM, heap 512m)
+[ERROR] Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+    at com.acme.reports.CsvExporter.buildRowBuffer(CsvExporter.java:88)
+    at com.acme.reports.CsvExporter.export(CsvExporter.java:41)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
